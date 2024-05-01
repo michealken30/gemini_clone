@@ -25,7 +25,7 @@
 }
 
 .main .greet {
-  margin: 50px 0;
+  margin: 15px 0;
   font-weight: 500;
   font-size: 50px;
   color: #c4c7c5;
@@ -42,7 +42,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 15px;
-  padding: 20px;
+  padding: 15px;
+  margin-bottom: 10px;
 }
 
 .main .card {
@@ -123,6 +124,7 @@
   padding: 0px 5%;
   max-height: 70vh;
   overflow-y: scroll;
+  padding-bottom: 30px;
 }
 
 .result::-webkit-scrollbar {
@@ -178,4 +180,25 @@
   font-size: 17px;
   font-weight: 300;
   line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .main-bottom input {
+    flex: none;
+    width: 150px;
+  }
+  .main-bottom img {
+    width: 20px;
+  }
+
+  .search-box {
+    padding: 5px 10px;
+  }
+  .search-box div {
+    gap: 5px;
+  }
+
+  .main .cards {
+    margin-bottom: 45px;
+  }
 }
